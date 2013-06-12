@@ -1,4 +1,5 @@
 Benchapp::Application.routes.draw do
+  root :to => 'users#index'
   resources :simulations
 
 

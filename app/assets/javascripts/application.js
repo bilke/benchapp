@@ -12,7 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require ./vendor/ember
+//= require ./vendor/handlebars-1.0.0-rc.4
+//= require ./vendor/ember-1.0.0-rc.5
 //= require ./vendor/ember-rest
 //= require_tree ./lib
 //= require app/app

@@ -61,7 +61,7 @@ class SimulationsController < ApplicationController
     respond_to do |format|
       if @simulation.update_attributes(params[:simulation])
         format.html { redirect_to @simulation, notice: 'Simulation was successfully updated.' }
-        format.json { head :no_content }
+        format.json { render json: nil, status: :ok }
       else
         format.html { render action: "edit" }
         format.json { render json: @simulation.errors, status: :unprocessable_entity }
@@ -77,7 +77,7 @@ class SimulationsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to simulations_url }
-      format.json { head :no_content }
+      format.json { render json: nil, status: :ok }
     end
   end
 end
