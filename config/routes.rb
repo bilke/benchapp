@@ -1,4 +1,7 @@
 Benchapp::Application.routes.draw do
+  resources :simulations
+
+
   resources :users
 
 
